@@ -5,15 +5,17 @@ language_tabs:
   - shell
   - ruby
   - python
+  - javascript
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
+  - <a href='https://www.pademobile.com'>Pademobile.com</a>
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
   - errors
 
 search: true
+
 ---
 
 # Introduction
@@ -44,6 +46,12 @@ api = kittn.authorize('meowmeowmeow')
 # With shell, you can just pass the correct header with each request
 curl "api_endpoint_here"
   -H "Authorization: meowmeowmeow"
+```
+
+```javascript
+package hola
+
+StringBuilder api = "meowmeowmeow";
 ```
 
 > Make sure to replace `meowmeowmeow` with your API key.
@@ -79,6 +87,13 @@ api.kittens.get()
 ```shell
 curl "http://example.com/api/kittens"
   -H "Authorization: meowmeowmeow"
+```
+
+```javascript
+package kttn
+
+StringBuilder api = "meowmeowmeow";
+api.get();
 ```
 
 > The above command returns JSON structured like this:
@@ -140,6 +155,13 @@ curl "http://example.com/api/kittens/2"
   -H "Authorization: meowmeowmeow"
 ```
 
+```javascript
+package kttn
+
+StringBuilder api = "meowmeowmeow";
+api.get(1);
+```
+
 > The above command returns JSON structured like this:
 
 ```json
@@ -166,3 +188,73 @@ Parameter | Description
 --------- | -----------
 ID | The ID of the kitten to retrieve
 
+
+# Milo
+
+## getimportes
+Devuelve los
+
+```javascript
+var xhr = new XMLHttpRequest();
+      xhr.open('GET', "/getimportes", true);
+      xhr.send();
+
+      xhr.onreadystatechange = function (e) {
+
+          if (xhr.readyState == 4 && xhr.status == 200) {
+              respuesta = JSON.parse(xhr.responseText);
+              cambiarTotales(respuesta);
+          }
+      };
+```
+
+## getTotalLogs
+Devuelve leo lsldoskd
+
+```javascript
+var xhr = new XMLHttpRequest();
+      xhr.open('GET', "/getTotalLogs", true);
+      xhr.send();
+
+      xhr.onreadystatechange = function (e) {
+
+          if (xhr.readyState == 4 && xhr.status == 200) {
+              respuesta = JSON.parse(xhr.responseText);
+              cambiarTotales(respuesta);
+          }
+      };
+```
+
+## geterrors
+Devuelve leo lsldoskd
+
+```javascript
+var xhr = new XMLHttpRequest();
+      xhr.open('GET', "/geterrors", true);
+      xhr.send();
+
+      xhr.onreadystatechange = function (e) {
+
+          if (xhr.readyState == 4 && xhr.status == 200) {
+              respuesta = JSON.parse(xhr.responseText);
+              cambiarTotales(respuesta);
+          }
+      };
+```
+
+## transaccionesttfecha
+Devuelve leo lsldoskd
+
+```javascript
+var xhr = new XMLHttpRequest();
+      xhr.open('GET', "/transaccionesttfecha", true);
+      xhr.send();
+
+      xhr.onreadystatechange = function (e) {
+
+          if (xhr.readyState == 4 && xhr.status == 200) {
+              respuesta = JSON.parse(xhr.responseText);
+              cambiarTotales(respuesta);
+          }
+      };
+```
