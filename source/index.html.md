@@ -191,7 +191,7 @@ ID | The ID of the kitten to retrieve
 
 # Milo
 
-## getimportes
+## /getimportes
 Devuelve los
 
 ```javascript
@@ -208,7 +208,7 @@ var xhr = new XMLHttpRequest();
       };
 ```
 
-## getTotalLogs
+## /getTotalLogs
 Devuelve leo lsldoskd
 
 ```javascript
@@ -225,7 +225,7 @@ var xhr = new XMLHttpRequest();
       };
 ```
 
-## geterrors
+## /geterrors
 Devuelve leo lsldoskd
 
 ```javascript
@@ -242,8 +242,143 @@ var xhr = new XMLHttpRequest();
       };
 ```
 
-## transaccionesttfecha
-Devuelve leo lsldoskd
+## /transaccionesttfecha
+Devuelve las transacciones en un json con el siguiente formato:
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Fluffums",
+    "breed": "calico",
+    "fluffiness": 6,
+    "cuteness": 7
+  },
+  {
+    "id": 2,
+    "name": "Max",
+    "breed": "unknown",
+    "fluffiness": 5,
+    "cuteness": 10
+  }
+]
+```
+
+```javascript
+var xhr = new XMLHttpRequest();
+      xhr.open('GET', "/transaccionesttfecha", true);
+      xhr.send();
+
+      xhr.onreadystatechange = function (e) {
+
+          if (xhr.readyState == 4 && xhr.status == 200) {
+              respuesta = JSON.parse(xhr.responseText);
+              cambiarTotales(respuesta);
+          }
+      };
+```
+
+## /transaccionesttsimple
+Devuelve las transacciones en un json con el siguiente formato:
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Fluffums",
+    "breed": "calico",
+    "fluffiness": 6,
+    "cuteness": 7
+  },
+  {
+    "id": 2,
+    "name": "Max",
+    "breed": "unknown",
+    "fluffiness": 5,
+    "cuteness": 10
+  }
+]
+```
+
+```javascript
+var xhr = new XMLHttpRequest();
+      xhr.open('GET', "/transaccionesttfecha", true);
+      xhr.send();
+
+      xhr.onreadystatechange = function (e) {
+
+          if (xhr.readyState == 4 && xhr.status == 200) {
+              respuesta = JSON.parse(xhr.responseText);
+              cambiarTotales(respuesta);
+          }
+      };
+```
+
+## /status
+Devuelve las transacciones en un json con el siguiente formato:
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Fluffums",
+    "breed": "calico",
+    "fluffiness": 6,
+    "cuteness": 7
+  },
+  {
+    "id": 2,
+    "name": "Max",
+    "breed": "unknown",
+    "fluffiness": 5,
+    "cuteness": 10
+  }
+]
+```
+
+```javascript
+var xhr = new XMLHttpRequest();
+      xhr.open('GET', "/transaccionesttfecha", true);
+      xhr.send();
+
+      xhr.onreadystatechange = function (e) {
+
+          if (xhr.readyState == 4 && xhr.status == 200) {
+              respuesta = JSON.parse(xhr.responseText);
+              cambiarTotales(respuesta);
+          }
+      };
+```
+
+## /summary
+Devuelve las transacciones en un json con el siguiente formato:
+
+```json
+[
+  {
+   "fecha": fecha,
+   "info": info,
+   "debug":debug,
+   "critical":critical,
+   "otroc":otro,
+   "error":error,
+
+   "otroe":otro,
+   "inicio_ws":inicio_ws,
+   "exito_ws":exito_ws,
+   "sms":sms,
+   "caracteristicas":caracteristicas,
+   "error_500_ws":error_500_ws,
+   "redirect":redirect,
+   "paises":paises,
+   "firmando":firmando,
+   "error_ws":error_ws,
+
+   "notran":notran,
+   "nombre": fichero
+  }
+]
+```
 
 ```javascript
 var xhr = new XMLHttpRequest();
